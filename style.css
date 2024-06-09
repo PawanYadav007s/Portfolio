@@ -231,8 +231,15 @@ background: none;
     background: #111;
     content: "";
 }
+.Achivements .serv-content {
+    display: flex; /* Add flexbox to arrange cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+    justify-content: space-between; /* Distribute space evenly between cards */
+}
+
 .Achivements .serv-content .card{
-    width: calc(100% - 20px); /* Change width to 100% for mobile */
+    width: calc(50% - 20px); /* Change width to 50% for mobile */
+    margin-bottom: 20px; /* Add bottom margin to create spacing between cards */
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -267,7 +274,7 @@ background: none;
 /* Media Query for Mobile */
 @media (max-width: 767px) {
     .Achivements .serv-content .card {
-        width: calc(50% - 20px); /* Change width to 50% for mobile */
+        width: calc(100% - 20px); /* Change width to 100% for mobile */
     }
 }
 
