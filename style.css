@@ -217,6 +217,7 @@ background: none;
 }
 
 /*services section styling*/
+/*services section styling*/
 .Achivements, .Teams{
     color: #fff;
     background: #111;
@@ -229,10 +230,9 @@ background: none;
 .Teams .title::after{
     background: #111;
     content: "";
-      
 }
 .Achivements .serv-content .card{
-    width: calc(33% - 20px);
+    width: calc(100% - 20px); /* Change width to 100% for mobile */
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -264,6 +264,12 @@ background: none;
     margin: 10px 0 7px 0;
 }
 
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+    .Achivements .serv-content .card {
+        width: calc(50% - 20px); /* Change width to 50% for mobile */
+    }
+}
 
 
 
